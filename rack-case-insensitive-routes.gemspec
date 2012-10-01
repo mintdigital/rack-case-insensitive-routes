@@ -6,10 +6,10 @@ require 'rack-case-insensitive-routes/version'
 Gem::Specification.new do |gem|
   gem.name          = "rack-case-insensitive-routes"
   gem.version       = Rack::Case::Insensitive::Routes::VERSION
-  gem.authors       = ["Adam"]
+  gem.authors       = ["Adam Rogers"]
   gem.email         = ["electronicbattleweapon7@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{downcase all incoming paths to the router}
+  gem.summary       = %q{downcase all incoming paths to the router}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
