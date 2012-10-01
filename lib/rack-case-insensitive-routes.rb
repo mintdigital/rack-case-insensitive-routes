@@ -7,7 +7,9 @@ module Rack
     end
 
     def call(env)
-      env['PATH_INFO'] = env['PATH_INFO'].downcase
+      unless env['PATH_INFO'] =~ /assets/
+        env['PATH_INFO'] = env['PATH_INFO'].downcase
+      end
       @app.call(env)
     end
   end
